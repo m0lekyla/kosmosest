@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+}
+
+header img {
+    width: 13%;
+    padding: 15px 0 0 40px;
+}
+
+.wrapper {
+    border: 1px #000000;
+    background-color: white;
+    text-align: center;
+}
+
+/*Navigation */
+.wrapper nav {
+    margin-bottom: 50px;
+}
+
+
+.wrapper nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.wrapper nav ul a {
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.wrapper nav ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.wrapper .firstImage img {
+    width: 100%;
+    height: 100%;
+}
+
+/* FIRST PHOTOES*/
+.wrapper .eightPhotoes .firstfourPhotoes {
+    margin-bottom: 30px;
+}
+
+.wrapper .eightPhotoes .firstfourPhotoes .ffPhoto {
+    width: 20%;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.wrapper .eightPhotoes .firstfourPhotoes .ffPhoto .img1 {
+    width: 100%;
+    height: 100%;
+}
+
+/* SECOND PHOTOES*/
+.wrapper .eightPhotoes .secondfourPhotoes {
+    margin-bottom: 1px;
+}
+
+.wrapper .eightPhotoes .secondfourPhotoes .sfPhoto {
+    width: 20%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.wrapper .eightPhotoes .secondfourPhotoes .sfPhoto .img2 {
+    width: 100%;
+    height: 100%;
+}
+
+/*VIDEO*/
+/*.video {
+    background-color: #9d43f1;
+    text-align: center;
+
+}
+
+.video iframe {
+    width: 500px;
+    height: 400px;
+}
+
+.video h2 {
+    color: #f1f1f1;
+}
+
+.video p {
+    color: #f1f1f1;
+}
+*/
+/*LOCATION*/
+
+.location {
+    background-color: #2b00ed;
+    text-align: center;
+}
+
+.location h1 {
+    color: #fcf3f3;
+}
+
+.location p {
+    color: aliceblue;
+}
+
+/*FOOTER*/
+
+.footer .bottomMenu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.botwrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.botmenu {
+    list-style: none;
+}
+
+.footer p{
+    color: #000000;
+    text-align: center;
+}
+
+.bottomMenu {
+    margin-left: 50px;
+    
+}
+
+.bottomMenu ul {
+    list-style: none;
+
+}
+
+.bottomMenu ul a {
+    text-decoration: none;
+    
+}
