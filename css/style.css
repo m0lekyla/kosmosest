@@ -1,0 +1,461 @@
+@font-face {
+    font-family: "drukcyr";
+    src: url('../fonts/drukcyr-medium.ttf');
+}
+@font-face {
+    font-family: "geologica";
+    src: url('../fonts/geologica/static/Geologica-Medium.ttf');
+}
+
+body{
+    height: 100%;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0 auto;
+
+}
+.wrapper{
+    width: 1300px;
+    margin: 0 auto;
+}
+.header{
+   background-image: url('../img/60minutes.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+    height: 1080px;
+}
+.header__main{
+    width: 1300px;
+    height: 1080px; 
+    margin: 0 auto;
+}
+.header__title{
+    font-family: 'drukcyr';
+    font-size: 160px;
+    font-weight: 500;
+    line-height: 160px;
+    color: white;
+    width: 1200px;
+    height: 480px;
+}
+.header__span{
+    font-family: 'drukcyr';
+    font-size: 180px;
+    font-weight: 500;
+    line-height: 160px;
+    color: red;
+}
+.header__text{
+    font-family: 'geologica';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #7D7D7D;
+    width: 748px;
+    height: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.header__button{
+    border: 3px solid #FFFF;
+    border-radius: 11px;
+    width: 263px;
+    height: 60px;
+    color: #FFFF;
+    text-decoration: none;
+    display: flex;
+    font-family: "geologica";
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+.header__button:hover{
+    color: red;
+}
+/*          dsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa  */
+
+.main{
+    width: 100%;
+}
+.about{
+    height: 1133px;
+    width: 100%;
+}
+.about__title{
+    font-family: "drukcyr";
+    font-size: 200px;
+    line-height: 160px;
+    font-weight: 500;
+    width: 1084px;
+    height: 160px;
+    margin-top: 46px;
+}
+.about__items{
+    margin-top: 250px;
+    margin-left: 40px;
+
+}
+.items__one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 65px;
+
+}
+
+.items__two{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.about__item{
+    width: 30%;
+    height: 317px;
+    font-family: "geologica";
+    font-size: 30px;
+    line-height: 56.25px;
+    font-weight: 700;
+
+}
+
+.about__item span{
+    font-family: "drukcyr";
+    font-weight: 500px;
+    font-size: 190px;
+    line-height: 160px;
+    color: red;
+    letter-spacing: 0.05em;
+}
+
+.about__item span:hover{
+    font-size: 300px;
+}
+/* dasasasasasasasasasasasasasasasasasas */
+
+
+
+
+
+
+.menu{
+    height: auto;
+    
+}
+.menu__title{
+    font-family: "drukcyr";
+    font-size: 230px;
+    font-weight: 500;
+    line-height: 160px;
+    color: black;
+}
+.menu__items{
+    margin-top: 200px;
+}
+.item__img{
+    width: 300px;
+    height: 300px;
+}
+.item__section1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.item__section2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 160px;
+}
+.item__section3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 160px;
+    margin-bottom: 160px;
+}
+.menu__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item__title{
+    font-family: "drukcyr";
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 80px;
+    align-self: start;
+}
+.item__text{
+    width: 350px;
+    height: 225px;
+    font-family: "geologica";
+    line-height: 20px;
+    letter-spacing: -0.04em;
+    font-size: 15px;
+    font-weight: 700;
+    color: #7D7D7D;
+    margin-top: 10px;
+}
+.item__button{
+    font-family: "geologica";
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.001em;
+    text-align: center;
+    width: 180px;
+    height: 15px;
+    border: 3px solid black;
+    border-radius: 11px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    margin-top: 10px;
+    text-decoration: none;
+    padding: 10px;
+
+}
+.item__button:hover{
+    color: black;
+    font-size: 14px;
+
+}
+/* dasssssssssssssssssssss */
+
+
+
+
+.zone{
+    height: 1500px;
+    width: 1300px;
+}
+.zone__title{
+    font-family: "drukcyr";
+    font-weight: 500;
+    font-size: 230px;
+    line-height: 160px;
+    color: black;
+    width: 914px;
+    height: 160px;
+    margin-top: 84px;
+}
+.zone__text{
+    font-family: "geologica";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -0.04em;
+    color: #7D7D7D;
+    margin-top: 61px;
+    width: 940px;
+    height: 225px;
+}
+.zone__img{
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+}
+.zone__img img{
+    width: 100%;
+}
+
+/* ORDERRRR */
+
+
+
+.order{
+    height: 1100px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.order__title{
+    font-family: "drukcyr";
+    font-weight: 500;
+    font-size: 230px;
+    line-height: 160px;
+    color: black
+}
+.order__form{
+    width: 700px;
+    height: 800px;
+    border: 3px solid black;
+    border-radius: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-end;
+    margin-top: auto;
+}
+.form__title{
+    font-family: "geologica";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: black;
+    text-align: center;
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0px auto;
+}
+.form input{
+    font-family: "geologica";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    margin-top: 15px;
+    padding-left: 20px;
+}
+.form::placeholder{
+    padding: 0;
+}
+.flnamewrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.flname{
+    border: 3px solid black;
+    border-radius: 11px;
+    width: 45%;
+    height: 40px;
+
+}
+.telmail{
+    border: 3px solid black;
+    border-radius: 11px;
+    height: 40px;
+    width: 96.5%;
+}
+.adres{
+    border: 3px solid black;
+    border-radius: 11px;
+    width: 96.5%;
+    height: 110px;
+    display: flex;
+    align-items: start;
+}
+.form textarea{
+    font-family: "geologica";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-top: 20px;
+    resize: none;
+}
+.comm{
+    border: 3px solid black;
+    border-radius: 11px;
+    width: 96.5%;
+    height: 200px;
+}
+.form-button{
+    border: 3px solid black;
+    border-radius: 11px;
+    width: 50%;
+    height: 70px;
+    background-color: black;
+    align-self: flex-end;
+    color: white;
+    
+}
+
+.form-button:checked{
+    font-size: 20px;
+    color: red;
+    border: 3px solid white;
+}
+
+/* FOOOOTERRRR */
+
+
+
+.footer{
+    height: 1500px;
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+    
+
+.footer__title{
+    font-family: "drukcyr";
+    font-weight: 500;
+    font-size: 180px;
+    line-height: 160px;
+    margin-top: 100px;
+    height: auto;
+}
+.footer__main{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 400px;
+    height: 48%;
+    display: flex;
+    justify-content: space-between;
+}
+.map{
+    width: 45%;
+    height: 100%;
+}
+.footer__contact{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.link{
+    text-decoration: none;
+    width: 30%;
+}
+.link p:hover{
+    color:red;
+}
+.link h1:hover{
+    color:red;
+}
+
+.about__h1{
+    font-family: "geologica";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    color: black;
+}
+.about__text{
+    font-family: "geologica";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    color: #7D7D7D;
+
+}
