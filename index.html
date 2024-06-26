@@ -1,120 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <title>Exercise-02</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
 </head>
-
 <body>
-    <header>
-        <img src="img/Asset 80.png" alt="">
-    </header>
-    <!--First section-->
-    <div class="wrapper">
-        <nav>
-            <ul>
-                <li><a href="#" ; class="home">ГЛАВНАЯ</a></li>
-                <li><a href="#" ; class="home">МЕНЮ</a></li>
-                <li><a href="#" ; class="about">О НАС</a></li>
-                <li><a href="#" ; class="gallery">ГАЛЕРЕЯ</a></li>
-                <li><a href="#" ; class="contact">КОНТАКТЫ</a></li>
-            </ul>
-        </nav>
-        
-        <div class="eightPhotoes">
-            <!--four photoes-->
-            <div class="firstfourPhotoes">
-                <div class="ffPhoto">
-                    <h1>РАГУ ИЗ ЯБЛОК</h1>
-                    <img class='img1' src="img/1.jpeg" alt="image">
-                    <p>Рагу из яблок это чудесное вкуснейшее блюдо. Состав: мясо прищельца, яблоки, кетчуп, соль, перец, вода. ККАЛ: 456. Стоимость: 300руб.</p>
+            <header class="header">
+                <div class="header__main">
+                    <div class="header__title">
+                        Доставка еды <br/>
+                        с гастрофеста <br/>
+                        за <span class="header__span">60</span> световых минут.
+                    </div>
+                    <div class="header__text">
+                        Межвселенский гастрофест Космос есть – событие, которое нельзя пропустить! Резиденты из каждого уголка млечного пути презентуют здесь свои новые шедевры и угощают старыми. Мы осуществляем доставку любых блюд 
+                        с гастрофеста в любой уголок галактики. 
+                    </div>
+                    <a href="#format" class="header__button">Заказать</a>   
+                </div>  
+            </header>
+        </div>
+        <div class="wrapper">
+            
+        <main class="main">
+            <!-- Космос это -->
+            <div class="about">
+                <div class="about__title">
+                    Космос есть - это:
+                </div>
+                <div class="about__items">
+                    <div class="items__one">
+                        <div class="about__item"><span>478 </span>резидентов</div>
+                        <div class="about__item"><span>>9га</span> территории</div>
+                    </div>
+                    <div class="items__two">
+                        <div class="about__item"><span>100000</span>посетителей</div>
+                        <div class="about__item"><span>7</span>дней фестиваля</div>
+                    </div>
+                    
+                    
                 </div>
 
-                <div class="ffPhoto">
-                    <h1>ЧАЙ ЗЕЛЁНЫЙ</h1>
-                    <img class='img1' src="img/2.jpeg" alt="image">
-                    <p>Тонизирующий чай собранный в горах китая. Состав: чай китайский зеленый, сахар, вода. ККАЛ: 98. Стоимость: 100руб.</p>
+            </div>
+            <!--  -->
+
+            <!-- Меню -->
+            <div class="menu">
+                <div class="menu__title">
+                    Меню:
                 </div>
 
-                <div class="ffPhoto">
-                    <h1>ЖАРЕНЫЙ ПЛУТОНЕЦ</h1>
-                    <img class='img1' src="img/3.jpeg" alt="image">
-                    <p>Настоящий эксклюзив! Не для слабонервных. Состав: плутонец свежий, кетчуп, яблоки, картофель, соевый соус. ККАЛ: 2365. Стоимость: 1200руб.</p>
-                </div>
-                <div class="ffPhoto">
-                    <h1>БОРЩ</h1>
-                    <img class='img1' src="img/4.jpeg" alt="image">
-                    <p>Классика межпланетной кухни: старый добрый борщ. Состав: мясо прищельца, картофель, свекла, капуста, соль, перец, вода. ККАЛ: 496. Стоимость: 270руб.</p>
-                </div>
-                <div class="ffPhoto">
-                    <h1>МОРКОВНЫЙ СУП</h1>
-                    <img class='img1' src="img/5.jpeg" alt="image">
-                    <p>Нежнейший суп приготовленный на огне по старинному нигерийскому рецепту. Состав: морковь, лук, шафран, чили перец, уксус зеленый, сухари, вода. ККАЛ: 275. Стоимость: 230руб.</p>
-                </div>
-
-                <div class="ffPhoto">
-                    <h1>ПИЦЦА С МАРСИАНИНОМ</h1>
-                    <img class='img1' src="img/6.jpeg" alt="image">
-                    <p>Многих пугает внешний вид данного блюда, но ценители без ума от этой пиццы!. Состав: тесто, томатный соус, оливки, филе марсианина, базилик. ККАЛ: 1945. Стоимость: 750руб.</p>
-                </div>
-
-                <div class="ffPhoto">
-                    <h1>ЧИЗБУРГЕР</h1>
-                    <img class='img1' src="img/7.jpeg" alt="image">
-                    <p>Просто чизбургер. Состав: булка, сыр, котлета, кетчуп. ККАЛ: 456. Стоимость: 90руб.</p>
-                </div>
-                <div class="ffPhoto">
-                    <h1>ЛАПША ВОК</h1>
-                    <img class='img1' src="img/8.jpeg" alt="image">
-                    <p>Секретный соус делает эту лапшу вок незабываемой! Состав: лапша, соус соевый, уксус, масло сливочное, чеснок, рыбный соус, майонез, филе коровы. ККАЛ: 846. Стоимость: 530руб.</p>
+                <div class="menu__items">
+                    <div class="item__section1">
+                        <div class="menu__item">
+                            <img class="item__img" src="./img/nabu.png" alt="j"></img>
+                            <div class="item__title">Фрукт Набу</div>
+                            <div class="item__text">Вкусный и сочный набу обладает неповторимым ароматом, напоминающим одновременно карамель и экзотический цветок.  Его нежная текстура тает во рту, оставляя сладкое послевкусие с легкой кислинкой.</div>
+                            <a href="#format" class="item__button">Добавить в корзину</a>
+                        </div>
+                        <div class="menu__item">
+                            <img class="item__img" src="./img/granat.png" alt="j"></img>
+                            <div class="item__title">Фрукт Набу</div>
+                            <div class="item__text">Этот гранат, выращенный под палящим солнцем Татуина, обладает невероятной сладостью и сочностью.  Его  ярко-красный цвет и хрустящая кожура скрывают нежные, сочные зерна, которые  напоминают вкус спелой вишни с легкой кислинкой.</div>
+                            <a href="#format" class="item__button">Добавить в корзину</a>
+                        </div>
+                        <div class="menu__item">
+                            <img class="item__img" src="./img/fri.png" alt="j"></img>
+                            <div class="item__title">Фрукт Набу</div>
+                            <div class="item__text">Не бойтесь, это не те самые кровожадные растения! Наши триффиды - это  нежный, сочный  фрукт с  тонкой кислинкой,  выращенный в  особо благоприятных условиях.  Вкус жареных триффидов  напоминает  сладкую картошку с  нежным  ароматом  земли.</div>
+                            <a href="#format" class="item__button">Добавить в корзину</a>
+                        </div>
+                    </div>
+                    <div class="item__section2">
+                        <div class="menu__item">
+                                <img class="item__img" src="./img/lime.png" alt="j"></img>
+                                <div class="item__title">Фрукт Набу</div>
+                            <div class="item__text">Этот фрукт, родом  с  далеких  планет,  необычайно  сладок  и  сочный.  Его  яркая  желтая  шкура скрывает  нежную  мякоть  с  нежным  медовым  ароматом.  Звездоплод  богат  витаминами  и  минералами,  а  его  необычный  вкус  оставит  незабываемые  впечатления.</div>
+                            <a href="#format" class="item__button">Добавить в корзину</a>
+                        </div>
+                        <div class="menu__item">
+                            <img class="item__img" src="./img/kripton.png" alt="j"></img>
+                            <div class="item__title">Фрукт Набу</div>
+                            <div class="item__text">Эта булочка,  испеченная  по  секретному  рецепту  с  использованием  редких  ингредиентов  с  Криптона,  подарит  вам  необычайную  силу  и  энергию.  Мягкий  и  пушистый  тесто  с  нежным  карамельным  вкусом  сочетается  с  начинкой  из  сладкого  творожного  крема.</div>
+                            <a href="#format" class="item__button">Добавить в корзину</a>
+                        </div>
+                        <div class="menu__item">
+                            <img class="item__img" src="./img/milo.png" alt="j"></img>
+                            <div class="item__title">Фрукт Набу</div>
+                            <div class="item__text">Этот  фрукт,  родом  с  планеты  Барабел,  обладает  удивительным  вкусом  и  ароматом.  Его  нежно-розовая  шкура  скрывает  сочную  мякоть  с  легким  привкусом  земляники  и  ванильной  ноткой.  Барабельский  фрукт  богат  витаминами  и  минералами,  и  является  отличным  источником  энергии.</div>
+                            <a href="#format" class="item__button">Добавить в корзину</a>
+                        </div>
+                    </div>
+                    <div class="item__section3">
+                        <div class="menu__item">
+                            <img class="item__img" src="./img/tentacle.png" alt="j"></img>
+                            <div class="item__title">Фрукт Набу</div>
+                            <div class="item__text">Не бойтесь,  это  не  то,  что  вы  думаете!  Наши  шупальца  Ктулху  –  это  нежные  и  сочные  грибы,  выращенные  в  особо  благоприятных  условиях.  Их  необычный  вкус  напоминает  морские  гребешки  с  легким  привкусом  орехов.</div>
+                            <a href="#format" class="item__button">Добавить в корзину</a>
+                        </div>
+                        <div class="menu__item">
+                            <img class="item__img" src="./img/sushi.png" alt="j"></img>
+                            <div class="item__title">Фрукт Набу</div>
+                            <div class="item__text">Искушающая симфония вкусов ждет вас в каждом кусочке наших суши из кудлера. Мягкий рис, свежие овощи и изысканное морепродукты сплетаются в изысканные роллы, создавая неповторимый аромат и неповторимый вкус. </div>
+                            <a href="#format" class="item__button">Добавить в корзину</a>
+                        </div>
+                        <div class="menu__item">
+                            <img class="item__img" src="./img/keks.png" alt="j"></img>
+                            <div class="item__title">Фрукт Набу</div>
+                            <div class="item__text">Этот невероятно нежный и ароматный десерт точно покорит ваше сердце с первого кусочка. Сочный бисквит, пропитанный лимонным сиропом со вставками свежих ягод, принесет радость в каждый глоток. Самый идеальный выбор для утреннего кофе или приятного чаепития.</div>
+                            <a href="#format" class="item__button">Добавить в корзину</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!--
-           
-        
+            <!--  -->
 
-
-        </div>
-    </div>
-    <!--end of wrapper-->
-
-
-    <!--LOCATION START-->
-    <div class="location">
-        <h1>OUR LOCATION</h1>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17442.08914452572!2d73.09191470601495!3d49.80726701745332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4243465ad22d0559%3A0xa90b6be0d244d433!2zMTAwMDAwINCa0LDRgNCw0LPQsNC90LTQsCwg0JrQsNC30LDRhdGB0YLQsNC9!5e0!3m2!1sru!2sru!4v1710798850294!5m2!1sru!2sru"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p>Наш фестиваль ждёт всех желающих окунуться в мир высокой и неожиданой кухни! Такого вы больше нигде не попробуете. Париж с их улитками и</p>
-    </div>
-    <!--LOCATIONS END-->
-
-
-    <!--FOOTER-->
-    <footer class="footer">
-
-        <!--LAST PART START-->
-        <div class="bottomMenu">
-                <div>
-                    <ul class="botwrapper">
-                        <li><a href="#" ; class="home" class="botmenu">Facebook</a></li>
-                        <li><a href="#" ; class="about" class="botmenu">Instagram</a></li>
-                        <li><a href="#" ; class="gallery" class="botmenu">Twitter</a></li>
-                        <li><a href="#" ; class="contact" class="botmenu">LinkedIn</a></li>
-                    </ul>
+            <!-- zona dostavki -->
+            <div class="zone">
+                <div class="zone__title">
+                    Зона доставки:
                 </div>
-           
 
+                <div class="zone__text">
+                    Мы доставляем еду с гастрофеста в любой уголок галактики. Благодаря нашим курьерам 
+                    и уникальной системе приёма заказов время доставки составляет всего 60 световых минут! 
+                </div>
 
-        </div>
+                <div class="zone__img">
+                    <img src="./img/zone.png" alt="zone"></img>
+                </div>
+            </div>
+            <!--  -->
 
-        <!--LAST PART end-->
-        <p>&copy;2024 Gordeev Egor 603089</p>
-    </footer>
+            <!-- Order -->
+            <div class="order">
+                <div class="order__title">
+                    Заказ:
+                </div>
+
+                <div class="order__form">
+                        <div class="form__title">
+                            Оставьте заявку
+                        </div>
+                        <form class="form" id="format">
+                            <div class="flnamewrapper">
+                                <input class="flname" type="text" maxlength="30" placeholder="имя">
+                                <input class="flname" type="text" maxlength="30" placeholder="фамилия">
+                            </div>
+                            <input class="telmail"type="tel" maxlength="30" placeholder="телефон">
+                            <input class="telmail" type="email" placeholder="e-mail">
+                            <textarea class="adres" type="text" maxlength="30" placeholder="адрес"></textarea>
+                            <textarea class="comm" type="text" maxlength="30" placeholder="комментарий"></textarea>
+                            <script src="./js/script.js"></script>
+                            <input id="contactSend" class="form-button" type="submit" value="Отправить" onClick="sendContactForm(event)">
+                        </form>
+                 
+                </div>
+            </div>
+            <!--  -->
+        </main>
+        <footer class="footer">
+            <!-- contact info -->
+            <div class="footer__title">
+                Контактная информация:
+            </div>
+            <div class="footer__main">
+                
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1564.3247446831945!2d44.01989448818962!3d56.324838537027574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4151d45b372cfb6d%3A0xd658dd570325d766!2sHSE%20Nizhny%20Novgorod%20Branch!5e0!3m2!1ssr!2srs!4v1719343688745!5m2!1ssr!2srs" class="map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                <div class="footer__contact">
+                        <a class="contact__item link" href="https://linktr.ee/money.wind">
+                            <h1 class="about__h1">Instagram</h1>
+                            <p class="about__text">@kosmos_est</p>
+                        </a>
+                        <a class="contact__item link" href="https://linktr.ee/money.wind">
+                            <h1 class="about__h1">Telegram:</h1>
+                            <p class="about__text">@kosmos_est</p>
+                        </a>
+                        <div class="contact__item">
+                            <h1 class="about__h1">Email:</h1>
+                            <p class="about__text">kosmosest2024@gmail.space</p>
+                        </div>
+                        <div class="contact__item">
+                            <h1 class="about__h1">Телефон:</h1>
+                            <p class="about__text">+79258374618</p>
+                        </div>
+                        <div class="contact__item">
+                            <h1 class="about__h1">Адрес:</h1>
+                            <p class="about__text">Планет земля, Россия, Г. Нижний Новгород, Ул. Большая Печерская 25/12, офис 315</p>
+                        </div>
+                </div>
+            </div>
+            <!--  -->
+        </footer>
+    </div>
 </body>
-
 </html>
